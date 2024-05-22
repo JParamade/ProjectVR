@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] List<MeshRenderer> lightMR = new List<MeshRenderer>();
+    public List<MeshRenderer> lightMR = new List<MeshRenderer>();
     
     private void Update() {
         

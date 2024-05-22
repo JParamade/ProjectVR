@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class GoalTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] PuzzleFace puzzleFace;
+    [SerializeField] GameManager gameManager;
+    [SerializeField] Material goalMaterial;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.GetComponent<SphereCollider>())
+        {
+            other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            
+            if (puzzleFace == PuzzleFace.FRONT) { gameManager.lightMR[0].GetComponent<MeshRenderer>().material = goalMaterial; }
+            else if (puzzleFace == PuzzleFace.BACK) { gameManager.lightMR[1].GetComponent<MeshRenderer>().material = goalMaterial; }
+            else if (puzzleFace == PuzzleFace.RIGHT) { gameManager.lightMR[2].GetComponent<MeshRenderer>().material = goalMaterial; }
+            else if (puzzleFace == PuzzleFace.LEFT  ) { gameManager.lightMR[3].GetComponent<MeshRenderer>().material = goalMaterial; }
+        }
     }
 }
