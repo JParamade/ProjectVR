@@ -5,7 +5,6 @@ using UnityEngine;
 public class GoalTrigger : MonoBehaviour
 {
     [SerializeField] PuzzleFace puzzleFace;
-    [SerializeField] GameManager gameManager;
     [SerializeField] Material goalMaterial;
 
     private void OnTriggerEnter(Collider other) {
@@ -13,10 +12,10 @@ public class GoalTrigger : MonoBehaviour
         {
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             
-            if (puzzleFace == PuzzleFace.FRONT) { gameManager.lightMR[0].GetComponent<MeshRenderer>().material = goalMaterial; }
-            else if (puzzleFace == PuzzleFace.BACK) { gameManager.lightMR[1].GetComponent<MeshRenderer>().material = goalMaterial; }
-            else if (puzzleFace == PuzzleFace.RIGHT) { gameManager.lightMR[2].GetComponent<MeshRenderer>().material = goalMaterial; }
-            else if (puzzleFace == PuzzleFace.LEFT  ) { gameManager.lightMR[3].GetComponent<MeshRenderer>().material = goalMaterial; }
+            if (puzzleFace == PuzzleFace.FRONT) { GameManager.Instance.lightMR[0].material = goalMaterial; }
+            else if (puzzleFace == PuzzleFace.BACK) { GameManager.Instance.lightMR[1].material = goalMaterial; }
+            else if (puzzleFace == PuzzleFace.RIGHT) { GameManager.Instance.lightMR[2].material = goalMaterial; }
+            else if (puzzleFace == PuzzleFace.LEFT) { GameManager.Instance.lightMR[3].material = goalMaterial; }
         }
     }
 }

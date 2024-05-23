@@ -379,7 +379,7 @@ Transform:
   m_GameObject: {fileID: 49334218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.355, y: 0.587, z: -0.357}
+  m_LocalPosition: {x: 0.3547, y: 0.589, z: -0.3552}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -398,7 +398,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleFace: 2
-  gameManager: {fileID: 2052366072}
   goalMaterial: {fileID: 2100000, guid: c1ff28fa05c74db4fb2bdb7236dc11f7, type: 2}
 --- !u!65 &49334221
 BoxCollider:
@@ -2140,18 +2139,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1951845397}
     m_Modifications:
     - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.35133335
       objectReference: {fileID: 0}
@@ -2195,11 +2182,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BackBall
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164493831492961670, guid: 8576d172ba6bc704bbac92184632893e,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4563,7 +4545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _updateMode: 0
-  _updateAfter: {fileID: 0}
+  _updateAfter: {fileID: 1519771245}
   _cameraRigRef: {fileID: 939099078}
   _processLateUpdates: 0
   _handedness: 1
@@ -4702,7 +4684,7 @@ Transform:
   m_GameObject: {fileID: 723028695}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.36, y: 0.858, z: 0.353}
+  m_LocalPosition: {x: -0.3553, y: 0.8553, z: 0.3549}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4792,7 +4774,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleFace: 0
-  gameManager: {fileID: 2052366072}
   goalMaterial: {fileID: 2100000, guid: c1ff28fa05c74db4fb2bdb7236dc11f7, type: 2}
 --- !u!1 &741251400
 GameObject:
@@ -5336,7 +5317,7 @@ GameObject:
   - component: {fileID: 842484105}
   - component: {fileID: 842484111}
   m_Layer: 0
-  m_Name: '[BuildingBlock] Cube'
+  m_Name: '[BuildingBlock] CubeBallPuzzle'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5559,7 +5540,7 @@ Transform:
   m_GameObject: {fileID: 852513971}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.357, y: 0.499, z: 0.175}
+  m_LocalPosition: {x: 0.3551, y: 0.4999, z: 0.178}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5578,7 +5559,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleFace: 1
-  gameManager: {fileID: 2052366072}
   goalMaterial: {fileID: 2100000, guid: c1ff28fa05c74db4fb2bdb7236dc11f7, type: 2}
 --- !u!65 &852513974
 BoxCollider:
@@ -7366,18 +7346,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1951845397}
     m_Modifications:
     - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.45670003
       objectReference: {fileID: 0}
@@ -7422,11 +7390,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftBall
       objectReference: {fileID: 0}
-    - target: {fileID: 7164493831492961670, guid: 8576d172ba6bc704bbac92184632893e,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7449,7 +7412,6 @@ GameObject:
   - component: {fileID: 1112975981}
   - component: {fileID: 1112975984}
   - component: {fileID: 1112975983}
-  - component: {fileID: 1112975982}
   m_Layer: 0
   m_Name: BackLight
   m_TagString: Untagged
@@ -7472,27 +7434,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 445401608}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1112975982
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112975980}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1112975983
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7585,7 +7526,6 @@ GameObject:
   - component: {fileID: 1133656517}
   - component: {fileID: 1133656520}
   - component: {fileID: 1133656519}
-  - component: {fileID: 1133656518}
   m_Layer: 0
   m_Name: RightLight
   m_TagString: Untagged
@@ -7608,27 +7548,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 445401608}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1133656518
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133656516}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1133656519
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7826,18 +7745,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1951845397}
     m_Modifications:
     - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2162509242102559, guid: 8576d172ba6bc704bbac92184632893e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4458
       objectReference: {fileID: 0}
@@ -7881,11 +7788,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RightBall
-      objectReference: {fileID: 0}
-    - target: {fileID: 7164493831492961670, guid: 8576d172ba6bc704bbac92184632893e,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10264,7 +10166,6 @@ GameObject:
   - component: {fileID: 1540866741}
   - component: {fileID: 1540866744}
   - component: {fileID: 1540866743}
-  - component: {fileID: 1540866742}
   m_Layer: 0
   m_Name: LeftLight
   m_TagString: Untagged
@@ -10287,27 +10188,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 445401608}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1540866742
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540866740}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1540866743
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11951,7 +11831,7 @@ Transform:
   m_GameObject: {fileID: 1798022405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.087, y: 0.855, z: 0.359}
+  m_LocalPosition: {x: 0.0888, y: 0.8556, z: 0.3552}
   m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -11970,7 +11850,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleFace: 3
-  gameManager: {fileID: 2052366072}
   goalMaterial: {fileID: 2100000, guid: c1ff28fa05c74db4fb2bdb7236dc11f7, type: 2}
 --- !u!65 &1798022408
 BoxCollider:
@@ -13616,6 +13495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8177939f19ece40bc4cae60061692d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  completedMaterial: {fileID: 0}
   lightMR:
   - {fileID: 2110640416}
   - {fileID: 1112975983}
@@ -14061,7 +13941,6 @@ GameObject:
   - component: {fileID: 2110640414}
   - component: {fileID: 2110640417}
   - component: {fileID: 2110640416}
-  - component: {fileID: 2110640415}
   m_Layer: 0
   m_Name: FrontLight
   m_TagString: Untagged
@@ -14084,27 +13963,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 445401608}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2110640415
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110640413}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2110640416
 MeshRenderer:
   m_ObjectHideFlags: 0
