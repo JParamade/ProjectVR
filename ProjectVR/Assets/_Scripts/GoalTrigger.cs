@@ -8,14 +8,16 @@ public class GoalTrigger : MonoBehaviour
     [SerializeField] Material goalMaterial;
 
     private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.GetComponent<SphereCollider>())
+        if (other.gameObject.GetComponent<SphereCollider>() && !other.gameObject.GetComponent<Rigidbody>().isKinematic)
         {
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            
-            if (puzzleFace == PuzzleFace.FRONT) { GameManager.Instance.lightMR[0].material = goalMaterial; }
-            else if (puzzleFace == PuzzleFace.BACK) { GameManager.Instance.lightMR[1].material = goalMaterial; }
-            else if (puzzleFace == PuzzleFace.RIGHT) { GameManager.Instance.lightMR[2].material = goalMaterial; }
-            else if (puzzleFace == PuzzleFace.LEFT) { GameManager.Instance.lightMR[3].material = goalMaterial; }
+
+            if (puzzleFace == PuzzleFace.FRONT) { CubePuzzleController.Instance.lights[0].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
+            else if (puzzleFace == PuzzleFace.BACK) { CubePuzzleController.Instance.lights[1].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
+            else if (puzzleFace == PuzzleFace.RIGHT) { CubePuzzleController.Instance.lights[2].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
+            else { CubePuzzleController.Instance.lights[3].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
+
+            if (CubePuzzleController.Instance.puzzlesCompleted >= 4) { CubePuzzleController.Instance.OnPuzzleCompleted(); }
         }
     }
 }
