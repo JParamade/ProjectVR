@@ -12,7 +12,7 @@ public class CubePuzzleController : MonoBehaviour
     public static CubePuzzleController Instance { get; private set; }
     private void Awake() { Instance = this; }
 
-    public List<MeshRenderer> lights = new List<MeshRenderer>();
+    public List<MeshRenderer> lightMR = new List<MeshRenderer>();
 
     public void OnPuzzleCompleted() { fireworkParticles.gameObject.SetActive(true); }
 }

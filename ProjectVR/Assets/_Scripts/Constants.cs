@@ -8,3 +8,8 @@ public enum PuzzleFace {
     RIGHT,
     LEFT
 }
+
+public enum SimonSaysPhase {
+    PLAY,
+    WATCH
+}

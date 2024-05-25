@@ -12,10 +12,10 @@ public class GoalTrigger : MonoBehaviour
         {
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
  
-            if (puzzleFace == PuzzleFace.FRONT) { CubePuzzleController.Instance.lights[0].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
-            else if (puzzleFace == PuzzleFace.BACK) { CubePuzzleController.Instance.lights[1].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
-            else if (puzzleFace == PuzzleFace.RIGHT) { CubePuzzleController.Instance.lights[2].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
-            else { CubePuzzleController.Instance.lights[3].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
+            if (puzzleFace == PuzzleFace.FRONT) { CubePuzzleController.Instance.lightMR[0].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
+            else if (puzzleFace == PuzzleFace.BACK) { CubePuzzleController.Instance.lightMR[1].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
+            else if (puzzleFace == PuzzleFace.RIGHT) { CubePuzzleController.Instance.lightMR[2].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
+            else { CubePuzzleController.Instance.lightMR[3].material = goalMaterial; CubePuzzleController.Instance.puzzlesCompleted++; }
  
             if (CubePuzzleController.Instance.puzzlesCompleted >= 4) { CubePuzzleController.Instance.OnPuzzleCompleted(); }
         }
